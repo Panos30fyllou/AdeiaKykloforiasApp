@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill"
+            />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:fontFamily="@font/comfortaa_bold"
+            android:hint="@string/address"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/sendLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoLayout">
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|fill_vertical"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/infoLayout">
+
+            <Button
+                android:id="@+id/ph_Button"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/rounded_corner"
+                android:drawableLeft="@drawable/ic_ph"
+                android:fontFamily="@font/comfortaa_bold"
+                android:onClick="pharmacy"
+                android:text="@string/pharmacy"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/sm_Button"
+                android:textSize="12sp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_sm"
+                android:fontFamily="@font/comfortaa_bold"
+                android:onClick="supermarket"
+                android:text="@string/supermarket"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/bank_Button"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/rounded_corner"
+                android:drawableLeft="@drawable/ic_coin"
+                android:fontFamily="@font/comfortaa_bold"
+                android:onClick="bank"
+                android:text="@string/bank"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/help_Button"
+                android:textSize="12sp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_help1"
+                android:onClick="help"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/help"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/cer_Button"
+                android:textSize="12sp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_cross"
+                android:onClick="ceremony"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/ceremony"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/ex_Button"
+                android:textSize="12sp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_ex"
+                android:onClick="exercise"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/exercise"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Message"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+        />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:background="@drawable/rounded_corner2"
+            android:textSize="16sp"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_arrow"
+            android:onClick="sendSMS"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@string/send"
+            tools:ignore="RtlHardcoded"
+            />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-6319308427607437/3972739721" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

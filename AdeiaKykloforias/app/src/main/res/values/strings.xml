@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Άδεια Κυκλοφορίας</string>
+    <string name="send">ΑΠΟΣΤΟΛΗ</string>
+    <string name="exercise">ΣΩΜΑΤΙΚΗ ΑΣΚΗΣΗ / ΚΑΤΟΙΚΙΔΙΟ</string>
+    <string name="ceremony">ΤΕΛΕΤΗ / ΕΠΙΚΟΙΝΩΝΙΑ ΔΙΑΖΕΥΓΜΕΝΩΝ</string>
+    <string name="help">ΠΑΡΟΧΗ ΒΟΗΘΕΙΑΣ / ΣΥΝΟΔΕΙΑ ΜΑΘΗΤΗ</string>
+    <string name="bank">ΤΡΑΠΕΖΑ</string>
+    <string name="supermarket">ΑΓΑΘΑ ΠΡΩΤΗΣ ΑΝΑΓΚΗΣ</string>
+    <string name="pharmacy">ΦΑΡΜΑΚΕΙΟ / ΙΑΤΡΟΣ</string>
+    <string name="address">ΔΙΕΥΘΥΝΣΗ</string>
+    <string name="name">ΟΝΟΜΑΤΕΠΩΝΥΜΟ</string>
+</resources>
