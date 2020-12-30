@@ -246,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("sms_body", msg.getText().toString().trim());
                 startActivity(intent);
                 //smsManager.sendTextMessage("13033", null, msg.getText().toString(), null, null);
-                Toast.makeText(getApplicationContext(), "Μετέρεστε στα Μηνύματα...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Μεταφέρεστε στα Μηνύματα...", Toast.LENGTH_SHORT).show();
                 writeNameToFile(name);
                 writeAddressToFile(address);
             } catch (Exception ex) {

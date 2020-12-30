@@ -10,8 +10,8 @@ android {
         applicationId "com.adeiakykloforias"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 9
-        versionName "1.6"
+        versionCode 10
+        versionName "1.6.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
